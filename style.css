@@ -1,0 +1,138 @@
+body {
+  background-image: url("/pictures/contourbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.pic {
+  /* margin-left: 750px;
+    margin-bottom: 100px; */
+  position: fixed;
+  margin: 20px 750px;
+}
+
+.pic a {
+  color: blue;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  width: max-content;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+ul img {
+  float: left;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  position: sticky;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-around;
+}
+.item {
+  margin: 5px;
+  float: left;
+  width: 25%;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4%;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(245, 234, 234);
+  border-radius: 7px;
+  background-color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: white;
+  font-size: large;
+  margin-top: 20px;
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  ul {
+    float: none;
+    align-items: left;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    background-attachment: fixed;
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 80%;
+    height: auto;
+  }
+  body {
+    background-attachment: fixed;
+  }
+  .foot {
+    font-size: small;
+  }
+}
